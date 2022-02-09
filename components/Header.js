@@ -1,4 +1,4 @@
-import { Center, Container, Box } from "@chakra-ui/react";
+import { Center, Container, Box, Divider } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Navbar } from ".";
 
@@ -6,7 +6,6 @@ const headerLogoStyle = {
   fontFamily: `"Trebuchet MS", Helvetica, sans-serif`,
   fontSize: "3.25rem",
   color: "black",
-  borderBottom: "1px solid #e5e5e5",
   width: "100%"
 };
 
@@ -20,7 +19,8 @@ const Header = (headerProps) => {
           </NextLink>
         </Center>
       </Box>
-      <Navbar />
+      <Divider />
+      <Navbar py="2" />
     </Container>
   );
 };
